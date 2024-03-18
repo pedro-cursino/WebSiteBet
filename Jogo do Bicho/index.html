@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo do Bicho</title>
+  <style>
+    #checkbox-container {
+      justify-content: center;
+      align-items: center;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    img {
+      margin: auto;
+      width: 10%;
+    }
+
+    .padrao {
+      margin: auto;
+      display: block;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Jogo dos Animais Divertidos</h1><br>
+  <h1>Escolha um animal:</h1>
+  <div id="checkbox-container"></div>
+
+  <br><br><button type="button" onclick="jogar()" class="padrao">Ver Resultado</button><br><br>
+  <h1 id="resultado1" class="padrao"></h1><br>
+  <img id="minhaImagem" src="./img/imagem1.png" class="padrao">
+
+  <script src="index.js"></script>
+</body>
+
+</html>

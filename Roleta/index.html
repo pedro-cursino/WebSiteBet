@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cassino</title>
+</head>
+
+<body>
+  <h1>Seus Créditos: R$<span id="creditos"></span></h1>
+
+  <h1>Valor da Aposta:</h1>
+  <input type="number" id="aposta" name="numero"></input><br><br>
+
+  <h1>Quer apostar em:</h1>
+  <form>
+    <label for="botao1">Uma característica</label>
+    <input type="radio" id="botao1" name="opcoes" value="1" data-type="number">
+
+    <label for="botao2">Um número</label>
+    <input type="radio" id="botao2" name="opcoes" value="2" data-type="number" checked>
+
+  </form><br><br>
+
+  <h1 id="resultado"></h1><br><br>
+  <button type="button" onclick="jogar()">Apostar</button>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

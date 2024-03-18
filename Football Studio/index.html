@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Studio</title>
+</head>
+
+<body>
+  <h1>Seus Créditos: R$<span id="creditos"></span></h1>
+
+  <h1>Valor da Aposta:</h1>
+  <input type="number" id="aposta" name="aposta" min="0"></input><br><br>
+
+  <h1>Escolha uma opção:</h1>
+  <form>
+    <label for="botao1">Casa</label>
+    <input type="radio" id="botao1" name="opcoes" value="1" data-type="number">
+
+    <label for="botao2">Empate</label>
+    <input type="radio" id="botao2" name="opcoes" value="2" data-type="number" checked>
+
+    <label for="botao3">Visitante</label>
+    <input type="radio" id="botao3" name="opcoes" value="3" data-type="number">
+  </form><br><br>
+
+  <h1 id="icones">&#160;&#160;&#160;&#160;&#160;vs&#160;&#160;&#160;&#160;&#160;</h1>
+  <h1 id="resposta"></h1>
+  <h1 id="resultado"></h1><br><br>
+
+  <button type="button" onclick="jogar()">Apostar</button>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
